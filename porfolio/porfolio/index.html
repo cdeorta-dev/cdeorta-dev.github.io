@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de César</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+</head>
+<body>
+  <header class="header-glass">
+    <div class="logo">
+      <span class="logo-text">C</span>
+    </div>
+    <nav class="main-nav">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <div class="nav-links">
+        <a href="#inicio" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+        <a href="#sobre-mi" class="nav-link"><i class="fas fa-user"></i> Sobre Mí</a>
+        <a href="#proyectos" class="nav-link"><i class="fas fa-code"></i> Proyectos</a>
+        <a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="inicio" class="hero">
+    <div class="wave-container">
+        <div class="waves">
+          
+        </div>
+    </div>
+    
+    <div id="particles-js"></div>
+
+    <div class="hero-content">
+      <h1 class="glitch" data-text="CdeOrta-Dev">CdeOrta-Dev</h1>
+      <p class="typing-text">Desarrollador Web Full Stack</p>
+      <div class="hero-buttons">
+        <!-- <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+        <a href="#contacto" class="btn-secondary">Contactar</a> -->
+      </div>
+    </div>
+  </section>
+  
+  <section id="sobre-mi" class="about">
+    <h2>Sobre Mí</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales.</p>
+        <div class="skills">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="proyectos" class="projects"   >
+    <h2>Proyectos Destacados</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <!-- <img src="ruta-imagen-proyecto1.jpg" alt="Proyecto 1"> -->
+        </div>
+        <div class="project-info">
+          <h3>Proyecto 1</h3>
+          <p>Descripción detallada del proyecto...</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-project"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn-project"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <!-- <img src="ruta-imagen-proyecto1.jpg" alt="Proyecto 1"> -->
+        </div>
+        <div class="project-info">
+          <h3>Proyecto 1</h3>
+          <p>Descripción detallada del proyecto...</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-project"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="btn-project"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+      <!-- Agregar más project-card según necesites -->
+    </div>
+  </section>
+  
+  <section id="contacto" class="contact">
+    <h2>¡Trabajemos Juntos!</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>tu-email@ejemplo.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Tu ubicación</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formsubmit.co/tu-email@ejemplo.com" method="POST">
+        <div class="form-group">
+          <input type="text" name="nombre" required style="border: 2px solid var(--accent-color); border-radius: 4px;">
+          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Nombre</label>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" required style="border: 2px solid var(--accent-color); border-radius: 4px;">
+          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Email</label>
+        </div>
+        <div class="form-group">
+          <textarea name="mensaje" required style="border: 2px solid var(--accent-color); border-radius: 4px;"></textarea>
+          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Mensaje</label>
+        </div>
+        <button type="submit" class="btn-submit" style="background: linear-gradient(45deg, #6200ea, #9d4edd); color: white; padding: 12px 30px; border: none; border-radius: 25px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(98, 0, 234, 0.3);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+          <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 César | Desarrollador Web</p>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="scrips.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+  particlesJS('particles-js', {
+      particles: {
+          number: {
+              value: 80,
+              density: {
+                  enable: true,
+                  value_area: 800
+              }
+          },
+          color: {
+              value: '#38bdf8'
+          },
+          shape: {
+              type: 'circle'
+          },
+          opacity: {
+              value: 0.5,
+              random: false
+          },
+          size: {
+              value: 3,
+              random: true
+          },
+          line_linked: {
+              enable: true,
+              distance: 150,
+              color: '#38bdf8',
+              opacity: 0.4,
+              width: 1
+          },
+          move: {
+              enable: true,
+              speed: 2,
+              direction: 'none',
+              random: false,
+              straight: false,
+              out_mode: 'out',
+              bounce: false
+          }
+      },
+      interactivity: {
+          detect_on: 'canvas',
+          events: {
+              onhover: {
+                  enable: true,
+                  mode: 'grab'
+              },
+              onclick: {
+                  enable: true,
+                  mode: 'push'
+              },
+              resize: true
+          }
+      },
+      retina_detect: true
+  });
+  </script>
+</body>
+</html>

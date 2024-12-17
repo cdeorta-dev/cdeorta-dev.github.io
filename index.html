@@ -15,7 +15,7 @@
 <body>
   <header class="header-glass">
     <div class="logo">
-      <span class="logo-text">C</span>
+      <a href="#inicio" class="nav-link"><span class="logo-text">CdeOrta-Dev</span></a>
     </div>
     <nav class="main-nav">
       <div class="hamburger">
@@ -26,8 +26,8 @@
       
       <div class="nav-links">
         <a href="#inicio" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
-        <a href="#sobre-mi" class="nav-link"><i class="fas fa-user"></i> Sobre Mí</a>
-        <a href="#proyectos" class="nav-link"><i class="fas fa-code"></i> Proyectos</a>
+        <a href="#subtitulo" class="nav-link"><i class="fas fa-user"></i> Sobre Mí</a>
+        <a href="#sobre-mi" class="nav-link"><i class="fas fa-code"></i> Proyectos</a>
         <a href="#contacto" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a>
       </div>
     </nav>
@@ -44,7 +44,7 @@
 
     <div class="hero-content">
       <h1 class="glitch" data-text="CdeOrta-Dev">CdeOrta-Dev</h1>
-      <p class="typing-text">Desarrollador Web Full Stack</p>
+      <p class="typing-text" id="subtitulo">Desarrollador Web Full Stack</p>
       <div class="hero-buttons">
         <!-- <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
         <a href="#contacto" class="btn-secondary">Contactar</a> -->
@@ -52,23 +52,82 @@
     </div>
   </section>
   
-  <section id="sobre-mi" class="about">
-    <h2>Sobre Mí</h2>
+  <section  class="about, section2">
+    <h2>👋 ¡Hola y Bienvenido!</h2>
     <div class="about-content">
-      <div class="about-text">
-        <p>Soy un desarrollador web apasionado por crear experiencias digitales únicas y funcionales.</p>
-        <div class="skills">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Node.js</span>
-        </div>
+      <div class="about-text" >
+        <p>Soy César M. de Orta desarrollador de software con más de 4 años de experiencia transformando ideas en soluciones digitales innovadoras. Mi pasión está en crear aplicaciones web, de escritorio y videojuegos que no solo funcionen, sino que superen las expectativas y ofrezcan una experiencia increíble.</p>
+  
+      </div>
+    </div>
+   
+      </div>
+    </div>
+  </section>
+  <section  class="about, section2">
+   
+    <h2>🚀 ¿Qué puedo hacer por vos?</h2>
+    <div class="about-content">
+      <div class="about-text" >
+        <h3>💻 Desarrollo de Aplicaciones</h3>
+        <ul>
+          <li>Web y Backend: PHP (Laravel), JavaScript y Python (Django).</li>
+          <li>Escritorio: C# .NET Core y Visual Basic .NET.</li>
+          <li>Videojuegos: Unity Certified Developer, creando experiencias interactivas únicas.</li>
+          <li>Blockchain: Desarrollo de contratos inteligentes con Solidity.</li>
+        
+        </ul>
+        <h3>  🤖Inteligencia Artificial</h3>
+<p>Incorporo tecnologías de IA y Prompt Engineering para optimizar soluciones, automatizar procesos y agregar valor a tus proyectos.</p>
+
+<h3>🗄️ Bases de Datos</h3>
+<p>Gestión avanzada con SQL y MySQL para asegurar eficiencia y rendimiento.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about, section2">
+   
+    <h2>💼 Mi Experiencia Profesional</h2>
+    <div class="about-content">
+      
+        <ul>
+          <li>🛠️ Desarrollador de Software | ProgramasDeComputo.com (2 años): Creación de aplicaciones a medida, enfocadas en las necesidades del cliente.</li>
+          <li>💡 Ingeniero de Sistemas | Empresa Única (2 años - Actual): Desarrollo y mantenimiento de sistemas tecnológicos avanzados para una tarjeta de crédito local.</li>
+         
+        </ul>
+     
       </div>
     </div>
   </section>
   
-  <section id="proyectos" class="projects"   >
+  <section class="about, section2">
+   
+    <h2>🎯 ¿Por qué elegirme?</h2>
+    <div class="about-content">
+      
+        <ul>
+          <li>Experiencia Comprobada: +4 años resolviendo desafíos tecnológicos.</li>
+          <li>Innovación y Compromiso: Me enfoco en calidad, eficiencia y resultados tangibles.</li>
+          <li> Siempre a la Vanguardia: Incorporo tecnologías emergentes como IA y Blockchain en cada proyecto.</li>
+         
+        </ul>
+     
+      </div>
+    </div>
+  </section>
+  <section id="sobre-mi" class="about, section2">
+   
+    <h2>✨ ¿Tenés un proyecto en mente?</h2>
+    <div class="about-content">
+      <p>¡Hablemos! Estoy acá para ayudarte a llevar tus ideas al siguiente nivel. Juntos, hagamos que tu visión cobre vida. 🚀</p>
+    
+     
+      </div>
+    </div>
+  </section>
+  
+  <section id="proyectos" class="projects section2"   >
     <h2>Proyectos Destacados</h2>
     <div class="projects-grid">
       <div class="project-card">
@@ -111,37 +170,27 @@
     </div>
   </section>
   
-  <section id="contacto" class="contact">
+  <section id="contacto" class="contact section2">
     <h2>¡Trabajemos Juntos!</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <p>tu-email@ejemplo.com</p>
+
+      <form class="contact-form" action="https://formsubmit.co/cdeorta.dev@gmail.com" method="POST">
+        <div class="form-group" style="max-width: 400px;">
+          <input type="text" name="nombre" id="nombre" required style="border: 2px solid var(--accent-color); border-radius: 4px; width: 100%;">
+          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;" for="nombre">Tu Nombre</label>
         </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Tu ubicación</p>
-        </div>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-      <form class="contact-form" action="https://formsubmit.co/tu-email@ejemplo.com" method="POST">
-        <div class="form-group">
-          <input type="text" name="nombre" required style="border: 2px solid var(--accent-color); border-radius: 4px;">
-          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Nombre</label>
+        <div class="form-group" style="max-width: 400px;">
+          <input type="email" name="email" id="email" required style="border: 2px solid var(--accent-color); border-radius: 4px; width: 100%;">
+          <label for="email" style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Email</label>
         </div>
         <div class="form-group">
-          <input type="email" name="email" required style="border: 2px solid var(--accent-color); border-radius: 4px;">
-          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Email</label>
+          <textarea name="mensaje" id="mensaje" placeholder="dejanos tu mensaje." required style="border: 2px solid var(--accent-color); border-radius: 4px;"></textarea>
+          <label  for="mensaje" style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Mensaje</label>
         </div>
-        <div class="form-group">
-          <textarea name="mensaje" required style="border: 2px solid var(--accent-color); border-radius: 4px;"></textarea>
-          <label style="border: 1px solid var(--accent-color); padding: 2px 8px; border-radius: 4px;">Tu Mensaje</label>
-        </div>
+
+
+        <!-- //<input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> -->
+        <input type="hidden" name="_subject" value="¡Nuevo mensaje de contacto!">
+        <input type="hidden" name="_captcha" value="false">
         <button type="submit" class="btn-submit" style="background: linear-gradient(45deg, #6200ea, #9d4edd); color: white; padding: 12px 30px; border: none; border-radius: 25px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(98, 0, 234, 0.3);" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
           <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
           Enviar Mensaje
@@ -151,19 +200,38 @@
   </section>
   
   <footer>
-    <div class="footer-content">
-      <p>© 2024 César | Desarrollador Web</p>
+    
+    <div class="footer-content section2">
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <p>© 2024 CdeOrta-Dev | Desarrollador Web Full Stack</p>
+            <a href="mailto: cdeorta.dev@gmail.com">
+            <p>   <i class="fas fa-envelope"></i> cdeorta.dev@gmail.com</p></a>
+          </div>
+          <div class="contact-item">
+            <a href="https://maps.google.com/?q=Salta+46+4A,+Bahía+Blanca,+Buenos+Aires,+Argentina" target="_blank" class="map-link">
+            <p>   <i class="fas fa-map-marker-alt"></i> Salta 46 4A, Bahía Blanca, Buenos Aires, Argentina</p>
+           
+              
+            </a>
+          </div>
+      
+        </div>
+      
       <div class="footer-social">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/cdeorta-dev"  target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/cesar-martin-de-orta" target="_blank" ><i class="fab fa-linkedin"></i></a>
+
+        <a target="_blank" href="https://api.whatsapp.com/send/?phone=542914681055&text=Hola%20César,%20tengo%20un%20proyecto%20en%20mente%20y%20me%20gustaría%20que%20lo%20evaluemos%20juntos.%20¿Qué%20necesitas%20para%20empezar?&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i>
+        <a target="_blank" href="https://t.me/Cdeorta" ><i class="fab fa-telegram"></i></a>
       </div>
     </div>
   </footer>
   
   <!-- Particles.js -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script defer src="scrips.js"></script>
+  <script defer src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
   particlesJS('particles-js', {

@@ -18,6 +18,13 @@ body {
     color: var(--text-color);
     line-height: 1.6;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
 
 /* Header Estilo Glass */
 .header-glass {
@@ -70,7 +77,11 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease;
 }
-
+.section2{
+    max-width: 95%; margin: 0 auto;
+    margin-top: 20px; /* Ajusta este valor según lo que necesites */
+    padding: 1rem; /* Espaciado interno opcional */
+}
 .project-card:hover {
     transform: translateY(-10px);
 }
@@ -118,10 +129,10 @@ body {
     align-items: center;
 }
 
-/* .nav-links {
+.nav-links {
     display: flex;
     gap: 2rem;
-} */
+}
 
 .nav-link {
     color: #ffffff;
@@ -283,11 +294,6 @@ body {
     display: flex;
     align-items: center;
   }
-/* 
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  } */
 
   /* Hamburger button */
   .hamburger {
@@ -376,3 +382,29 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+
+@media screen and (max-width: 768px) {
+    .section2 {
+        max-width: 99%; /* Cambiado a 95% para vista móvil */
+        padding: 1rem; /* Espaciado interno */
+    }
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border: 2px solid #9d4edd;
+  border-radius: 6px;
+  color: white;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(157, 78, 221, 0.1);
+  transform: translateY(-2px);
+}

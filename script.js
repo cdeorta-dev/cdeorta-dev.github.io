@@ -24,7 +24,33 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.remove('active');
         }
     });
-}); 
+});
+
+
+let buton = document.querySelector(".btn-submit")
+buton.addEventListener("click",(event)=>{
+    event.preventDefault();
+    console.log("enviar mensaje")
+    const formData = new FormData(document.querySelector('form'));
+console.log(formData)
+    fetch('https://formsubmit.co/cdeorta.dev@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Content-Type': 'multipart/form-data',
+        },
+    })
+    .then(response =>
+        {console.log(response)})
+    .then(data => {
+        console.log('Respuesta del servidor:', data);
+    })
+    .catch(error => {
+        console.error('Error al enviar el formulario:', error);
+    });
+})
+
+
 // window.onload = function() {
 //     document.querySelector('.loader').style.display = 'none';
 //   };

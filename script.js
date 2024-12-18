@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let buton = document.querySelector(".btn-submit")
 buton.addEventListener("click",(event)=>{
-    event.preventDefault();
+    //event.preventDefault();
     console.log("enviar mensaje")
     const formData = new FormData(document.querySelector('form'));
 console.log(formData)
-    fetch('https://formsubmit.co/cdeorta.dev@gmail.com', {
+   /* fetch('https://formsubmit.co/cdeorta.dev@gmail.com', {
         method: 'POST',
         body: formData,
         headers: {
@@ -47,7 +47,7 @@ console.log(formData)
     })
     .catch(error => {
         console.error('Error al enviar el formulario:', error);
-    });
+    });*/
 })
 
 

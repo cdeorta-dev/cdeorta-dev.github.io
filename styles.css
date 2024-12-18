@@ -408,3 +408,27 @@ body {
   background-color: rgba(157, 78, 221, 0.1);
   transform: translateY(-2px);
 }
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    background: rgba(72, 187, 120, 0.9);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.notification.show {
+    right: 20px;
+}
+
+.notification i {
+    font-size: 20px;
+}

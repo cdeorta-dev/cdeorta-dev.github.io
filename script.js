@@ -29,25 +29,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let buton = document.querySelector(".btn-submit")
 buton.addEventListener("click",(event)=>{
-    //event.preventDefault();
-    console.log("enviar mensaje")
+    event.preventDefault();
     const formData = new FormData(document.querySelector('form'));
-console.log(formData)
-   /* fetch('https://formsubmit.co/cdeorta.dev@gmail.com', {
+    
+    fetch('https://formsubmit.co/cdeorta.dev@gmail.com', {
         method: 'POST',
         body: formData,
         headers: {
             'Content-Type': 'multipart/form-data',
         },
     })
-    .then(response =>
-        {console.log(response)})
-    .then(data => {
-        console.log('Respuesta del servidor:', data);
+    .then(response => {
+        if (response.ok) {
+            // Crear y mostrar la notificación
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                <span>¡Mensaje enviado con éxito!</span>
+            `;
+            document.body.appendChild(notification);
+            
+            // Mostrar la notificación
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            // Eliminar la notificación después de 3 segundos
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 500);
+            }, 3000);
+            buton.disabled = true;
+            // Limpiar el formulario
+            document.querySelector('form').reset();
+        }
     })
     .catch(error => {
         console.error('Error al enviar el formulario:', error);
-    });*/
+    });
 })
 
 
